@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg bg-body-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="https://i.postimg.cc/bNZP4K6f/n-logo-removebg-preview.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top rounded-circle">
+      <img src="https://i.postimg.cc/bNZP4K6f/n-logo-removebg-preview.png" alt="Logo" width="50" height="44" class="d-inline-block align-text-top ">
       
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

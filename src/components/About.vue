@@ -44,7 +44,7 @@
           </div>
          <p class="text-center">JAVASCRIPT</p>
           <div class="progress">
-          <div class="progress-bar w-25" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">30%</div>
+          <div class="progress-bar w-50" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
         </div>
   </div>
 </div>

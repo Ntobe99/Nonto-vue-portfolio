@@ -27,6 +27,7 @@ export default{
   background-color: #D3E4CD;
   color: #2c3e50;
   width: 100%;
+  overflow-x: hidden;
 }
 
 nav {

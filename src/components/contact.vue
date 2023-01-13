@@ -41,12 +41,14 @@
 .form{
 	margin: 0;
 	padding: 0;
+	align-items: center;
 }
 form {
 	margin-top: 210px;
 	max-width: 900px;
 	background-color: #fff;
-	padding: 20px;
+	padding: 40px;
+	
 }
 
 ul {

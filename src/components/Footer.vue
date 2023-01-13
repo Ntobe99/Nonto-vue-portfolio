@@ -45,6 +45,7 @@
   </div>
    <p>Copyright &copy; 2023 Nontobeko</p>
 </div>
+
 </footer>
 
     </div>
@@ -110,11 +111,12 @@ div.social {
 
 .copyright {
   padding: 0.3em 1em;
-  background-color: #0000;
+  background-color: rgba(69, 60, 60, 0);
 }
 .footer-menu{
   float: left;
   margin-top: 10px;
+
   
 }
 
