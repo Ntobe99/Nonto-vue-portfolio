@@ -1,9 +1,9 @@
 <template>
     <div class="testimonials">
 
-        <div class="box" style="display: grid; grid-template-columns: repeat(3, 1fr);grid-template-rows: repeat(2, 1fr);">
- <div class="card"  style="width: 400px;height: 360px; margin: 10px; align-items: center; "  v-for="item in testimonial">
-                    <img :src="item.image" class="rounded-circle " style="width: 150px;height: 140px; margin-top: 10px;">
+        <div class="box" style="margin-left: 150px; align-items: center;">
+          <div class="card"  style="width: 300px;height: 400px; margin: 20px; align-items: center; background-color: azure; "  v-for="item in testimonial">
+                    <img :src="item.image" class="rounded-circle " style="width: 150px;height: 140px; margin-top: auto; ">
                     <div class="card-body">
                       <h5 class="card-title">{{ item.status }}</h5>
                       <i class="fa fa-quotes"></i>
@@ -66,14 +66,19 @@
     margin-top: 110px;
     width: 100%;
     min-height: 100vh;
+
    
 }
+
+.box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .card{
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  padding: 14px 80px 18px 36px;
+    border-radius: 0px;
+   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding-top: 10px;
   cursor: pointer;
 }
 
@@ -82,9 +87,22 @@
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-.card h3{
+@media only screen and (max-width:970px) {
+  .box{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    
+  }
 }
 
+@media only screen and (max-width: 700px) {
+  .box{
+    margin-left:10px;
+    display: grid; 
+    grid-template-columns: 1fr;
+    
+  }
+}
 
  
 

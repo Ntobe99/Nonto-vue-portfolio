@@ -200,6 +200,13 @@ h1{
 
 }
 
+/* @media screen and (max-width: 640px) {
+	h1{
+		font-size: small;
+	}
+	
+} */
+
 
 
 </style>

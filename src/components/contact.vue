@@ -40,9 +40,10 @@
 <style  scoped>
 .form{
 	margin-left: 300px;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
+
 	padding: 0;
-	align-items: center !important;;
+	align-items: center !important;
 }
 form {
 	margin-top: 210px;
@@ -121,14 +122,26 @@ textarea {
 	border: none;
 	background: #f2f2f2;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1246px) {
+	.form{
+		margin-left:60px;
+
+	}
   form {
     grid-template-columns: 1fr;
     margin: 0px;
     padding-top: auto;
 	width: 90%;
+
   }
+  
 }
+@media only screen and (max-width: 400px) {
+	form{
+		width:300px
+	}
+    
+  }
 
 
 

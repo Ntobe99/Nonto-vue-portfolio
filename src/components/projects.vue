@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
-        <div class="container" style="display: grid; grid-template-columns: repeat(3, 1fr);grid-template-rows: repeat(2, 1fr);">
-              <div class="card" style="width: 400px;height: 320px; margin: 10px;  background-color: azure  ; box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;" v v-for="item in projects">
+        <div class="container" >
+              <div class="card" style="width: 250px;height: 360px; margin: 10px;  background-color: azure  ; box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;" v v-for="item in projects">
                 <div class="card-body">
                     <img :src="item.image"  class="card-img-top" alt="...">
                   <h5 class="card-title bold">{{ item.name }}</h5>     
@@ -53,20 +53,38 @@
 </script>
 
 <style  scoped>
+.container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center  !important;;
+    
+  }
 .projects{
     padding-top: 125px;
    
     
  
 }
-@media only screen and (max-width: 600px) {
+ @media only screen and (max-width:970px) {
+  .container{
+    margin-top: 30px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    
+  }
+}
+
+@media only screen and (max-width: 580px) {
   .container{
     display: grid; 
     grid-template-columns: 1fr;
     
   }
 }
-
+img{
+  height: 12rem;
+  object-fit: cover;
+}
 
 
 
