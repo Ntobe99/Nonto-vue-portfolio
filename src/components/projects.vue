@@ -1,7 +1,7 @@
 <template>
     <div class="projects">
         <div class="container" style="display: grid; grid-template-columns: repeat(3, 1fr);grid-template-rows: repeat(2, 1fr);">
-              <div class="card" style="width: 400px;height: 320px; margin: 10px;  background-color: azure; box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;" v v-for="item in projects">
+              <div class="card" style="width: 400px;height: 320px; margin: 10px;  background-color: azure  ; box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;" v v-for="item in projects">
                 <div class="card-body">
                     <img :src="item.image"  class="card-img-top" alt="...">
                   <h5 class="card-title bold">{{ item.name }}</h5>     
@@ -31,7 +31,7 @@
                 github:'https://github.com/Ntobe99/calculator-nonto'} ,
                {name:"Clothing shop", 
                 image:'https://i.postimg.cc/vBqJ1vK1/clothes-shop.png',
-                netlify:'https://lighthearted-tartufo-c9867d.netlify.app/ ',
+                netlify:'https://enchanting-crepe-3818ab.netlify.app/ ',
                 github:'https://github.com/Ntobe99/clothes-store'}, 
                {name:" Netflix clone", 
                 image:'https://i.postimg.cc/vZFp6T0v/netflix-clone.png',
@@ -43,7 +43,7 @@
                 github:'https://github.com/Ntobe99/portfolio-updated'} ,
                {name:"Sneaker Store", 
                 image:'https://i.postimg.cc/kMZrqf8z/Sneaker-store.png',
-                netlify:'https://app.netlify.com/sites/lighthearted-tartufo-c9867d',
+                netlify:'https://lighthearted-tartufo-c9867d.netlify.app/',
                 github:'https://github.com/Ntobe99/sneaker-project'} 
 
             ]
@@ -58,6 +58,13 @@
    
     
  
+}
+@media only screen and (max-width: 600px) {
+  .container{
+    display: grid; 
+    grid-template-columns: 1fr;
+    
+  }
 }
 
 

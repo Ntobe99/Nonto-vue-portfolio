@@ -2,12 +2,13 @@
     <div class="testimonials">
 
         <div class="box" style="display: grid; grid-template-columns: repeat(3, 1fr);grid-template-rows: repeat(2, 1fr);">
- <div class="card"  style="width: 400px;height: 320px; margin: 10px; align-items: center;  "  v-for="item in testimonial">
+ <div class="card"  style="width: 400px;height: 360px; margin: 10px; align-items: center; "  v-for="item in testimonial">
                     <img :src="item.image" class="rounded-circle " style="width: 150px;height: 140px; margin-top: 10px;">
                     <div class="card-body">
                       <h5 class="card-title">{{ item.status }}</h5>
-                      <i class="fa fa-quotes">
-                     <p class="card-text fst-italic"> {{item.message }}</p></i>
+                      <i class="fa fa-quotes"></i>
+                     <p class="card-text fst-italic"> {{item.message }}</p>
+                     
                       <p>-{{ item.details }}</p>
                      </div>
                     </div>
@@ -47,7 +48,7 @@
    {details:'Gift Mahlangu',
     message:"She is a resilient person that will provide great things in the near future as she works hard pushes herself to be better everyday.",
     status:'Life Choices Student',
-    image:''}
+    image:'https://i.postimg.cc/kM2jTMnZ/Gift-Mahlangu.jpg'}
 
        ],
        
@@ -67,12 +68,23 @@
     min-height: 100vh;
    
 }
-.card {
-       
-    /* background: linear-gradient(315deg, #cacaca, #f0f0f0); */
-    /* box-shadow:  -20px -20px 60px #bebebe,
-             20px 20px 60px #ffffff;  */
-      }
+.card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card h3{
+}
+
 
  
 

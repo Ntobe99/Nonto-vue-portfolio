@@ -39,14 +39,15 @@
 
 <style  scoped>
 .form{
-	margin: 0;
+	margin-left: 300px;
+	margin-bottom: 20px;
 	padding: 0;
-	align-items: center;
+	align-items: center !important;;
 }
 form {
 	margin-top: 210px;
 	max-width: 900px;
-	background-color: #fff;
+	background-color: white;
 	padding: 40px;
 	
 }

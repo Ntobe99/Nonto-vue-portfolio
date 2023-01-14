@@ -102,6 +102,10 @@
    .content:last-child {
       margin-bottom: 0;}
   
-  
+      @media only screen and (max-width: 1000px) {
+        .section-title{
+          margin-top: 150px;
+        }
+      }
 
 </style>

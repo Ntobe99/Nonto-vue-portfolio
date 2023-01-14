@@ -17,7 +17,7 @@
 										
 										
 										
-										<a href='https://docs.google.com/document/d/1beA_YXpkqd-MaCwAHsUs_1rgxSn-G5Hb/edit?usp=sharing&ouid=100303808536170313166&rtpof=true&sd=true' class='btn-custom section-toggle' data-section='contact' >
+										<a href='https://docs.google.com/document/d/1beA_YXpkqd-MaCwAHsUs_1rgxSn-G5Hb/edit?usp=sharing&ouid=100303808536170313166&rtpof=true&sd=true' class='btn-custom section-toggle' target="_blank_" >
 											Download Cv
 										</a>
 										
@@ -180,6 +180,24 @@ a.btn-custom{
 }
 .btn-custom.btn-color:before{
 	border-color:rgba(0,0,0,.2);
+}
+@media only screen and (max-width: 600px) {
+.home{
+	width: 100%;
+	overflow-x: hidden;
+}
+.intro-text{
+	position: relative;
+	text-align: center;
+
+	
+}
+h1{
+	position: relative;
+	text-align: center;
+	/* margin-top: 200px; */
+}
+
 }
 
 

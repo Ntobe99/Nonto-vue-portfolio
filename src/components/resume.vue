@@ -2,10 +2,10 @@
     <div id="resume"  >
         <div class="section-content">
         <h2 class="section-heading">Resume</h2>
-        <p class="para">I have a great passion for software development. After creating many projects I have earned good experience in various technologies. I give my 100% to any project or task I work on. With experience I have earned confidence and proficiency in what I do.</p>
+       
       </div>
 
-      <table class="table" v-for="item in resume">
+      <table class="table table-success" v-for="item in resume">
   <thead>
     <tr>
       <th scope="col">Year</th>
@@ -36,7 +36,7 @@
 </table>
 
 
-      <table class="table" v-for="thing in experience">
+      <table class="table table-success" v-for="thing in experience">
   <thead>
     <tr>
       <th scope="col">{{ thing.year }}</th>
@@ -46,8 +46,8 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row"></th>
-      <td></td>
+      <th scope="row" style="margin-left:0;">Duties</th>
+      <td>{{ thing.duties }}</td>
       
     </tr>
     <tr>
@@ -57,7 +57,7 @@
     </tr>
     <tr>
         <th scope="row">Location</th>
-      <td></td>
+      <td>{{ thing.location }}</td>
       
 
     </tr>
@@ -115,6 +115,7 @@
 #resume{
     padding-top: 120px;
     min-height: 100vh;
+   
 }
 
 
